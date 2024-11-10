@@ -5,7 +5,6 @@ import { useSelector } from "react-redux";
 const FoodItem = () => {
   const selectedCategory = useSelector((state) => state.category.category);
   const search = useSelector((state) => state.search.search);
-  console.log(search);
 
   return (
     <div className="flex flex-col lg:flex-row flex-wrap gap-3 mx-5 mt-5">

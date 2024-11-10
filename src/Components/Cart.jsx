@@ -10,7 +10,6 @@ const Cart = () => {
   const [activeCart, setActiveCart] = useState(false);
   const navigate = useNavigate();
   const cartData = useSelector((state) => state.cart.cartItems);
-  console.log(cartData);
 
   const totalAmount = Array.isArray(cartData)
     ? cartData.reduce((acc, item) => acc + item.price * item.quantity, 0)
